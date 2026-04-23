@@ -1,0 +1,16 @@
+# SubSync backend dependencies
+# Python 3.10+ required
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.6.0
+
+# Hermes itself is NOT installed via pip in this project.
+# agent_engine.py imports Hermes from a sibling folder via sys.path —
+# you must clone hermes-agent next to agent_auto_learn (see README "Setup").
+#
+# If you'd rather pip-install Hermes instead of using the sibling folder,
+# uncomment the line below AND remove the sys.path hack at the top of
+# backend/agent_engine.py:
+#
+# hermes-agent @ git+https://github.com/nousresearch/hermes-agent.git@d0e1388c

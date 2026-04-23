@@ -1,0 +1,85 @@
+# ============ Secrets / environment ============
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.pem
+*.key
+!**/*.d.ts
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+backend/subsync.db
+
+# ============ Node / frontend ============
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Build output
+dist/
+build/
+.next/
+out/
+.vite/
+.turbo/
+
+# Cloudflare / Wrangler
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# ============ IDE / OS ============
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ============ Logs ============
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# ============ Hermes runtime state ============
+# Keep skills/ and SOUL.md - those are code.
+# Exclude anything the agent writes back at runtime.
+hermes_home/**/sessions/
+hermes_home/**/logs/
+hermes_home/**/memories/
+hermes_home/**/cron/
+hermes_home/**/auth.json
+hermes_home/**/auth.lock
+hermes_home/**/models_dev_cache.json
+hermes_home/**/.skills_prompt_snapshot.json
+
+# ============ Misc ============
+*.zip
+*.tar.gz
+preview*.png
+!docs/preview*.png
