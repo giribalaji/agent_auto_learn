@@ -2,8 +2,8 @@
 title: "My First Post"
 slug: my-first-post
 date: 2026-05-16
-version: 0.1.1
-status: draft
+version: 1.0.0
+status: published
 tags: [llm, evals, ai]
 ---
 
